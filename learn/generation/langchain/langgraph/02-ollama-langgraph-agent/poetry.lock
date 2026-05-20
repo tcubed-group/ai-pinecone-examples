@@ -1043,15 +1043,18 @@ typing = ["types-PyYAML", "types-requests", "types-simplejson", "types-toml", "t
 
 [[package]]
 name = "idna"
-version = "3.7"
+version = "3.15"
 description = "Internationalized Domain Names in Applications (IDNA)"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "idna-3.7-py3-none-any.whl", hash = "sha256:82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0"},
-    {file = "idna-3.7.tar.gz", hash = "sha256:028ff3aadf0609c1fd278d8ea3089299412a7a8b9bd005dd08b9f8285bcb5cfc"},
+    {file = "idna-3.15-py3-none-any.whl", hash = "sha256:048adeaf8c2d788c40fee287673ccaa74c24ffd8dcf09ffa555a2fbb59f10ac8"},
+    {file = "idna-3.15.tar.gz", hash = "sha256:ca962446ea538f7092a95e057da437618e886f4d349216d2b1e294abfdb65fdc"},
 ]
+
+[package.extras]
+all = ["mypy (>=1.11.2)", "pytest (>=8.3.2)", "ruff (>=0.6.2)"]
 
 [[package]]
 name = "importlib-metadata"
@@ -1322,20 +1325,20 @@ test = ["ipykernel", "pre-commit", "pytest (<8)", "pytest-cov", "pytest-timeout"
 
 [[package]]
 name = "langchain"
-version = "0.2.12"
+version = "0.2.17"
 description = "Building applications with LLMs through composability"
 optional = false
 python-versions = "<4.0,>=3.8.1"
 groups = ["main"]
 files = [
-    {file = "langchain-0.2.12-py3-none-any.whl", hash = "sha256:565d2f5df1c06815d1c684400218ec4ae5e1027887aad343226fad846c54e726"},
-    {file = "langchain-0.2.12.tar.gz", hash = "sha256:fe7bd409c133017446fec54c38a5e7cb14f74e020090d7b5065374badf71e6d1"},
+    {file = "langchain-0.2.17-py3-none-any.whl", hash = "sha256:a97a33e775f8de074370aecab95db148b879c794695d9e443c95457dce5eb525"},
+    {file = "langchain-0.2.17.tar.gz", hash = "sha256:5a99ce94aae05925851777dba45cbf2c475565d1e91cbe7d82c5e329d514627e"},
 ]
 
 [package.dependencies]
 aiohttp = ">=3.8.3,<4.0.0"
 async-timeout = {version = ">=4.0.0,<5.0.0", markers = "python_version < \"3.11\""}
-langchain-core = ">=0.2.27,<0.3.0"
+langchain-core = ">=0.2.43,<0.3.0"
 langchain-text-splitters = ">=0.2.0,<0.3.0"
 langsmith = ">=0.1.17,<0.2.0"
 numpy = [
@@ -3372,4 +3375,4 @@ test = ["big-O", "importlib-resources ; python_version < \"3.9\"", "jaraco.funct
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.13"
-content-hash = "caf61006a37aa3cb7709b86b3c9aacf1f29f270a1221efa9eb0b1f180587c199"
+content-hash = "2da3ae8ef2e1f55558106f9aeee8d1a8a6f3baef8970afaa82ce6bb1cbfed28e"
